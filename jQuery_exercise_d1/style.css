@@ -1,0 +1,54 @@
+.container {
+    width: 50%;;
+    margin: 10% auto;
+    background-color: #2ecc71;
+    border-radius: 30px;
+}
+
+.js-phrase {
+    color: #ecf0f1;
+    margin: 30px;
+    font-size: 5em;
+    text-align: center;
+    padding: 10px;
+}
+
+.btn {
+    display: block;
+    margin: auto;
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+    border: 1px solid #9b59b6;
+    background: #ecf0f1;
+}
+
+.js-new {
+    display: block;
+    margin: 30px auto;
+    width: 300px;
+    height: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 0;
+}
+
+.js-phrases-list {
+    margin-left: 30px;
+}
+
+a {
+    margin-left: 30px;
+}
+
+.hidden {
+    display: none;
+}
+
+.active {
+    background-color: red;
+}
+
+.crossed {
+    text-decoration: line-through;
+}
