@@ -1,0 +1,66 @@
+<html>
+<head>
+	<title>Song Search</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="mystyle.css">
+</head>
+<body>
+	<div class="search">
+		<form class="js-search">
+			<input type="text" name="song" placeholder="Song">
+			<button type="submit">Search</button>
+		</form>
+		<div class="js-results">
+			<div class="js-prev invisible"><i class="fa fa-arrow-left" aria-hidden="true"></i></div>
+			<div class="js-results-titles"></div>
+			<div class="js-next invisible"><i class="fa fa-arrow-right" aria-hidden="true"></i></div>
+		</div>
+		<div class="js-artist-info invisible">
+			<div class="artist-info-box">
+				<p><strong>Name: </strong><span class="js-ai-name">Band name</span></p>
+				<img class="js-ai-pic" src="http://static.comicvine.com/uploads/original/4/49726/2051057-justice_league_band_2.png" alt="band photo">
+				<p><strong>Genres: </strong><span class="js-ai-genres">Band genres</span></p>
+				<p><strong>Followers: </strong><span class="js-ai-followers">Band followers</span></p>
+				<p><strong>Popularity: </strong><span class="js-ai-popularity">Band popularity</span></p>
+				<a href="#" class="js-view-albums"><i class="fa fa-folder-open-o" aria-hidden="true"></i> View albums</a>
+			</div>
+			<div class="available-albums-list invisible">
+				<a href="#" class="back-to-info"><i class="fa fa-chevron-left" aria-hidden="true"></i></a>
+				<ul class="js-av-al-list">
+				</ul>
+			</div>
+			<div class="album-info-box invisible">
+				<a href="#" class="back-to-albums"><i class="fa fa-chevron-left" aria-hidden="true"></i></a>
+				<p><strong>Name: </strong><span class="js-ali-name">Album name</span></p>
+				<img class="js-ali-pic" src="http://static.comicvine.com/uploads/original/4/49726/2051057-justice_league_band_2.png" alt="album photo">
+				<ul class="js-track-list"></ul>
+			</div>
+		</div>
+	</div>
+	<div class="widget">
+		<div class="header">
+		<!-- Try adding/removing these classes: -->
+		<!-- disabled -->
+		<!-- playing -->
+		<div class="btn-play js-play"></div>
+
+		<div class="metadata">
+		  <p class="title">Hunger of The Pine</p>
+		  <p class="author">alt-J</p>
+
+		  <div class="seekbar">
+		    <progress value="0" max="30"></progress>
+		  </div>
+		</div>
+		</div>
+		<div class="cover">
+		<img src="https://i.scdn.co/image/04da6dfc1f5f45fdeba938a0cc71cf372524fd43">
+		</div>
+
+		<audio class="js-player" src="https://p.scdn.co/mp3-preview/8e9c5ffdc38e91659bfe8b6bd44650dfc25a3d31"></audio>
+	</div>
+	<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script src="script.js"></script>
+</body>
+</html>

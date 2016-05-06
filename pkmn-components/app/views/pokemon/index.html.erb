@@ -1,0 +1,99 @@
+<h1>Pokédex</h1>
+
+<!-- List of pokemon -->
+<ul class="pokedex-list">
+  <% @pokemon.each do |pkmn| %>
+    <li>
+      <button class="js-show-pokemon btn btn-link"
+          data-pokemon-uri="<%= pkmn["resource_uri"] %>">
+        <%= pkmn["name"] %>
+      </button>
+    </li>
+  <% end %>
+</ul>
+
+
+<!-- Pokemon modal view (hidden at first) -->
+<div class="modal fade js-pokemon-modal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <button class="close" data-dismiss="modal">
+          <span>&times;</span>
+        </button>
+
+        <h3 class="modal-title">
+          <span class="js-pokemon-name">Feraligtr</span>
+          <small class="js-pokemon-number">#160</small>
+        </h3>
+      </div><!-- .modal-header -->
+
+      <div class="modal-body">
+        <dl class="dl-horizontal">
+          <div class="row">
+            <div class="col-sm-3">
+              <img class="js-pokemon-image" src="http://pokeapi.co/media/img/888.png">
+            </div>
+            <div class="col-sm-3">
+              <dt>Height</dt>
+              <dd class="js-pokemon-height">23</dd>
+
+              <dt>Weight</dt>
+              <dd class="js-pokemon-weight">888</dd>
+
+              <dt>HP</dt>
+              <dd class="js-pokemon-hp">888</dd>
+
+              <dt>Attach</dt>
+              <dd class="js-pokemon-attack">888</dd>
+
+              <dt>Defense</dt>
+              <dd class="js-pokemon-defense">888</dd>
+            </div>
+            <div class="col-sm-3">
+              <dt>Special Attack</dt>
+              <dd class="js-pokemon-sp_atk">888</dd>
+
+              <dt>Special Defense</dt>
+              <dd class="js-pokemon-sp_def">888</dd>
+
+              <dt>Speed</dt>
+              <dd class="js-pokemon-speed">888</dd>
+
+              <dt>Types</dt>
+              <dd class="js-pokemon-types">888</dd>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-12">
+              <dt>Description</dt>
+              <dd class="js-pokemon-desc scrollable"></dd>
+            </div>
+          </div>
+        </dl>
+      </div><!-- .modal-body -->
+
+    </div><!-- .modal-content -->
+  </div><!-- .modal-dialog -->
+</div><!-- .modal -->
+
+<!-- Pokemon modal view (hidden at first) -->
+<div class="modal fade js-loading">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <button class="close" data-dismiss="modal">
+          <span>&times;</span>
+        </button>
+
+        <h3 class="modal-title">
+          Loading...
+        </h3>
+      </div><!-- .modal-header -->
+      </div><!-- .modal-body -->
+
+    </div><!-- .modal-content -->
+  </div><!-- .modal-dialog -->
+</div><!-- .modal -->

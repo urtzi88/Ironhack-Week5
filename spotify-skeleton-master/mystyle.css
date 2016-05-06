@@ -1,0 +1,143 @@
+.search {
+    width: 300px;
+    margin: 10px auto;
+}
+
+.search input {
+    width: 240px;
+    padding: 5px;
+    display: inline-block;
+    border-radius: 5px;
+    border: 1px solid #95a5a6;
+}
+
+.search input:focus {
+    outline: none;
+}
+
+.search button {
+    width: 56px;
+    display: inline-block;
+    padding: 5px;
+    border: 1px solid #2ecc71;
+    background-color: #fff;
+    box-sizing: border-box;
+    border-radius: 5px;
+    color: #2ecc71;
+}
+
+.search button:hover {
+    background-color: #2ecc71;
+    color: #fff;
+}
+
+.not-empty {
+    height: 70px;
+    overflow: hidden;
+    background-color: #ccc;
+    position: relative;
+    border-radius: 5px;
+}
+
+div[class^="js-track"] {
+    height: 70px;
+    width: 200px;
+    margin: auto;
+    text-align: center;
+}
+
+.js-prev,
+.js-next {
+    width: 50px;
+    display: inline-block;
+    height: 70px;
+    position: absolute;
+    top: 0;
+    text-align: center;
+    cursor: pointer;
+}
+
+.js-prev {
+    left: 0;
+}
+
+.js-next {
+    right: 0;
+}
+
+.js-prev i,
+.js-next i {
+    line-height: 70px;
+    font-size: 1.4em;
+}
+
+.js-prev:hover i,
+.js-next:hover i {
+    color: #2ecc71;
+}
+
+.invisible {
+    display: none;
+}
+
+.js-artist-info {
+    width: 290px;
+    min-height: 100px;
+    margin: 5px auto;
+    padding: 5px;
+    border-radius: 5px;
+    background: #ccc;
+}
+
+.js-artist-info img {
+    max-width: 100%;
+    max-height: 200px;
+    display: block;
+    margin: auto;
+    border-radius: 5px;
+}
+
+.js-artist-info p {
+    margin-left: 10px;
+}
+
+.js-artist-info a {
+    text-decoration: none;
+    color: #27ae60;
+    margin-left: 10px;
+    padding: 5px;
+    border: 1px solid #27ae60;
+    border-radius: 5px;
+    display: inline-block;
+    width: 255px;
+    text-align: center;
+}
+
+.js-track-list a:hover,
+.js-artist-info a:hover {
+    color: #2ecc71;
+    border: 1px solid #2ecc71;
+}
+
+ul.js-track-list a:hover,
+ul.js-av-al-list a:hover {
+    color: #999;
+    border: 0;
+}
+
+ul.js-track-list a,
+ul.js-av-al-list a {
+    border: 0;
+    color: #333;
+}
+
+ul.js-track-list,
+ul.js-av-al-list {
+    margin: 10px 0;
+    padding: 0;
+}
+
+ul.js-track-list li,
+ul.js-av-al-list li {
+    list-style-type: none;
+}
